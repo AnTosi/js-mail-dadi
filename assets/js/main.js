@@ -11,8 +11,10 @@
 //event listener per "dire" al sistema che ho inserito la mail
 //if mail inserita è in elenco ---> esito positivo, else -----> esito negativo
 
-let mailList = ["queutricaweicre-6784@yopmail.com", "quacrappeullaho-9067@yopmail.com",               "xoidexatrefe-8363@yopmail.com", "mail@fabiopacifici.com", "hello@tizianonicolai.com", "cane", "cane@gmail.com", "fabiola.gardin.85@gmail.com"];
+const mailList = ["queutricaweicre-6784@yopmail.com", "quacrappeullaho-9067@yopmail.com",     "xoidexatrefe-8363@yopmail.com", "mail@fabiopacifici.com", "hello@tizianonicolai.com", "cane", "cane@gmail.com", "fabiola.gardin.85@gmail.com"];
 console.log(mailList.length);
+let listLength = mailList.length;
+console.log(listLength)
 
 
 
@@ -25,18 +27,24 @@ document.getElementById("click").addEventListener ("click", function(){
 })
 
 // metto la funzione per vedere se array contiene mail inserita
-document.getElementById("click").addEventListener ("click", function containsObject(mailValue, mailList) {
-    for (var i = 0; i < mailList.length; i++) {
-        if (mailList[i] === mailValue) {
+document.getElementById("click").addEventListener ("click", function containsObject("mailValue", mailList) {
+    var i;
+    for (i = 0; i < listLength; i++) {
+        if ("mailList"[i] === "mailValue") {
             console.log("bentornato");
+            
         } else {
         console.log("non puoi entrare");
+        
         }
     }
 }
 )
 
+
 //mi sono bloccato qua sopra perché mi dà mailList ins undefined
+
+//mi dice "mailList is declared but it's value is never read", non riesco a capire perché
 
 
 

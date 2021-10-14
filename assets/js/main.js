@@ -24,22 +24,32 @@ document.getElementById("click").addEventListener ("click", function(){
     const userMail = document.getElementById("userMail");
     const mailValue = userMail.value;
     console.log(mailValue);
+    if (mailList.includes(mailValue)) {
+        console.log ("bentornato");
+    } else {
+        console.log ("non puoi entrare")
+    }
 })
 
 // metto la funzione per vedere se array contiene mail inserita
-document.getElementById("click").addEventListener ("click", function containsObject(mailValue, mailList) {
-    var i;
-    for (i = 0; i < listLength; i++) {
-        if (mailList[i] === mailValue) {
-            console.log("bentornato");
+// document.getElementById("click").addEventListener ("click", function containsObject(mailValue, mailList) {
+//     for (let i = 0; i < listLength; i++) {
+//         if (mailList[i] === mailValue) {
+//             console.log("bentornato");
             
-        } else {
-        console.log("non puoi entrare");
+//         } else {
+//         console.log("non puoi entrare");
         
-        }
-    }
-}
-)
+//         }
+//     }
+// }
+// )
+
+
+// provo con includes
+// sono riuscito mettendo includes all'intero del precedente event listener, forse nell'altra funzione mi dava la roba undefined perché la generavo con lo stesso click con cui la utilizzavo nella funzione stessa
+
+
 
 
 //mi sono bloccato qua sopra perché mi dà mailList ins undefined

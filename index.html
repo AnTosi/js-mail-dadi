@@ -8,25 +8,44 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="form-area">
-        <button>
-            <input type="text" id="userMail" placeholder="if (sei Fabio) {inserisci la mail del canale youtube} else {inserisci la mail che mi hai dato}">
-        </button> <br>
-        <button id="click">Invia</button>
-    </div>
+    <section id=mailArea>
+        <h1>Questa è l'area mail</h1>
+        <div class="form-area">
+            <button>
+                <input type="text" id="userMail" placeholder="if (sei Fabio) {inserisci la mail del canale youtube} else {inserisci la mail che mi hai dato}">
+            </button> <br>
+            <button id="click">Invia</button>
+        </div>
+    
+        <div class="result">
+            <p id="yourMail">
+                
+            </p>
+    
+            <p id="result" class="">
+            </p>
+    
+            <p id="non puoi entrare">
+    
+            </p>
+        </div>
+    </section>
 
-    <div class="result">
-        <p id="yourMail">
-            
-        </p>
+    <section id="dice area">
+        <h1> Questa è l'area dadi</h1>
+        <div>
+            <button id="diceThrow">
+                Lancia il dado!
+            </button>
 
-        <p id="result" class="">
-        </p>
+            <p id="yourScore"></p>
+            <p id="pcScore"></p>
+            <p id="winner"></p>
 
-        <p id="non puoi entrare">
 
-        </p>
-    </div>
+
+        </div>
+    </section>
 
     <script src="./assets/js/main.js">
     </script>

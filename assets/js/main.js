@@ -79,6 +79,30 @@ document.getElementById("click").addEventListener ("click", function(){
 
 
 
+// qua cominciano i dadi, devo generare due numeri on click e decidere chi vince
 
+//strumenti
+//button con eventlistener
+//generatore math random per numero da 1 a 6
+//if per decidere vincitore
+
+document.getElementById("diceThrow").addEventListener("click", function() {
+
+    // tiro i dadi con i random e li stampo a schermo con il click e prima dell'if
+    let userNumber = Math.floor(Math.random () * 6) + 1;
+        document.getElementById("yourScore").innerHTML = (`Hai fatto ${userNumber}!`);
+    let pcNumber = Math.floor(Math.random() * 6) + 1;
+        document.getElementById("pcScore").innerHTML = (`Il PC ha fatto ${pcNumber}!`);
+
+    //qua confronto i punteggi con l'if >, < e = e stampo l'esito in ogni caso a schermo
+    if (userNumber > pcNumber) {
+        document.getElementById("winner").innerHTML = ("HAI VINTO!!!!");
+    } else if (userNumber < pcNumber) {
+        document.getElementById("winner").innerHTML = ("Hai perso...");
+    } else {
+        document.getElementById("winner").innerHTML = ("Pari");
+    }
+}
+)
 
     

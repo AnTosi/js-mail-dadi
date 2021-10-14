@@ -94,15 +94,37 @@ document.getElementById("diceThrow").addEventListener("click", function() {
     let pcNumber = Math.floor(Math.random() * 6) + 1;
         document.getElementById("pcScore").innerHTML = (`Il PC ha fatto ${pcNumber}!`);
 
+
+    // provo a mettere una sorta di contatore vittorie pareggi e sconfitte
+    // ovviamente non funziona
+    // var wins = document.getElementById("wins");
+    // var draws = document.getElementById("draws");
+    // var defeats = document.getElementById("defeats");
+
     //qua confronto i punteggi con l'if >, < e = e stampo l'esito in ogni caso a schermo
     if (userNumber > pcNumber) {
         document.getElementById("winner").innerHTML = ("HAI VINTO!!!!");
+        document.getElementById("winner").classList = ("gold");
+        // non funziona con l'incremento
+        // ++wins;
+        // document.getElementById("wins").innerHTML = (wins);
     } else if (userNumber < pcNumber) {
         document.getElementById("winner").innerHTML = ("Hai perso...");
+        document.getElementById("winner").classList = ("grey");
+        // né con il + 1
+        // var draws = draws + 1;
+        // document.getElementById("draws").innerHTML = (draws);
     } else {
         document.getElementById("winner").innerHTML = ("Pari");
+        document.getElementById("winner").classList = ("green");
+
+        // var defeats = defeats + 1;
+        // document.getElementById("defeats").innerHTML = (defeats);
     }
 }
 )
+
+// la parte dadi sarebbe finita, ora provo ad aggiungere qualche effetto for fun
+// provo ad aggiungere contatore
 
     

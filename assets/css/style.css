@@ -11,3 +11,22 @@ input {
 section {
     margin-bottom: 3rem;
 }
+
+.gold {
+    background-color: gold;
+    color: red;
+}
+
+p {
+    width: 1000px;
+    text-align: center;
+}
+
+.green {
+    background-color: greenyellow;
+} 
+
+.grey {
+    background-color: grey;
+    color: honeydew;
+}

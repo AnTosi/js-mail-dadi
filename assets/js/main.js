@@ -11,39 +11,53 @@
 //event listener per "dire" al sistema che ho inserito la mail
 //if mail inserita è in elenco ---> esito positivo, else -----> esito negativo
 
-const mailList = ["queutricaweicre-6784@yopmail.com", "quacrappeullaho-9067@yopmail.com",     "xoidexatrefe-8363@yopmail.com", "mail@fabiopacifici.com", "hello@tizianonicolai.com", "cane", "cane@gmail.com", "fabiola.gardin.85@gmail.com"];
+const mailList = ["queutricaweicre-6784@yopmail.com", "quacrappeullaho-9067@yopmail.com", "xoidexatrefe-8363@yopmail.com", "mail@fabiopacifici.com", "hello@tizianonicolai.com", "cane", "cane@gmail.com", "fabiola.gardin.85@gmail.com"];
 console.log(mailList.length);
 let listLength = mailList.length;
 console.log(listLength)
 
 
+const result = document.getElementById("result")
+
+
 
 // secondo me così dovrebbe funzionare ma mi stampa il placeholder invece che il contenuto
 // risolto con value
-document.getElementById("click").addEventListener ("click", function(){
+
+document.getElementById("click").addEventListener ("click", function(){   
     const userMail = document.getElementById("userMail");
     const mailValue = userMail.value;
-    console.log(mailValue);
     if (mailList.includes(mailValue)) {
         console.log ("bentornato");
+        result.innerHTML = "Bentornato";
     } else {
         console.log ("non puoi entrare")
+        result.innerHTML = "Non puoi entrare";
     }
+
+    document.getElementById("yourMail").innerHTML = `La mail da te inserita è "${mailValue}"`;
 })
 
+
 // metto la funzione per vedere se array contiene mail inserita
-// document.getElementById("click").addEventListener ("click", function containsObject(mailValue, mailList) {
+
+// lo commento perché sono costretto ad utilizzare l'altro, visto che questa funzione quando vera mi restituisce un valore positivo ma anche gli altri 7 negativi, quindi non riesco ad ottenere il risultato che voglio
+
+// document.getElementById("click").addEventListener ("click", function () {
+//     const userMail = document.getElementById("userMail");
+//     const mailValue = userMail.value;
 //     for (let i = 0; i < listLength; i++) {
 //         if (mailList[i] === mailValue) {
-//             console.log("bentornato");
+//             result.innerHTML = "Bentornato";
             
 //         } else {
-//         console.log("non puoi entrare");
-        
+//             result.innerHTML = "Non puoi entrare";
 //         }
 //     }
 // }
 // )
+
+
 
 
 // provo con includes

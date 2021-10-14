@@ -106,7 +106,7 @@ document.getElementById("diceThrow").addEventListener("click", function() {
         document.getElementById("winner").innerHTML = ("HAI VINTO!!!!");
         document.getElementById("winner").classList = ("gold");
         // non funziona con l'incremento
-        // ++wins;
+        // ++wins; mi dà NaN
         // document.getElementById("wins").innerHTML = (wins);
     } else if (userNumber < pcNumber) {
         document.getElementById("winner").innerHTML = ("Hai perso...");

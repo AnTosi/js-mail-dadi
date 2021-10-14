@@ -27,10 +27,10 @@ document.getElementById("click").addEventListener ("click", function(){
 })
 
 // metto la funzione per vedere se array contiene mail inserita
-document.getElementById("click").addEventListener ("click", function containsObject("mailValue", mailList) {
+document.getElementById("click").addEventListener ("click", function containsObject(mailValue, mailList) {
     var i;
     for (i = 0; i < listLength; i++) {
-        if ("mailList"[i] === "mailValue") {
+        if (mailList[i] === mailValue) {
             console.log("bentornato");
             
         } else {

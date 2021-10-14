@@ -7,9 +7,10 @@
 //strumenti:
 //const varie
 //array (lista mail del mio elenco)
+//bottone input per inserire mail
 //if mail inserita è in elenco ---> esito positivo, else -----> esito negativo
 
-const mailList = ["queutricaweicre-6784@yopmail.com", "quacrappeullaho-9067@yopmail.com", "xoidexatrefe-8363@yopmail.com", "mail@fabiopacifici.com"];
+const mailList = ["queutricaweicre-6784@yopmail.com", "quacrappeullaho-9067@yopmail.com", "xoidexatrefe-8363@yopmail.com", "mail@fabiopacifici.com", "hello@tizianonicolai.com"];
 
 
 
